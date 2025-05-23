@@ -62,12 +62,14 @@
 }
 
 /* Header block */
+
+/* Header block */
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 0px 10px;
-    /* position: relative; */
+    position: relative;
     z-index: 2;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -76,6 +78,7 @@
     height: 75px;
 }
 .header__logo{
+    flex: 0 0 10%;
     padding: 10px;
 }
 .header__logo img{
@@ -90,11 +93,23 @@
     padding: 10px;
 }
 .header__contact{
+    flex: 0 0 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     padding: 10px;
+}
+.header__contact a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+
+}
+
+.header-phone-contact{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .header__phone {
@@ -102,48 +117,6 @@
     text-decoration: none;
     font-weight: 500;
 }
-/* 
-
-.header__logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.header__logo {
-    flex: 1;
-}
-
-.header__logo-text {
-    font-family: 'Playfair Display', serif;
-    color: #c9a55c;
-    font-size: 24px;
-    font-weight: 700;
-    border-right: 1px solid yellow;
-}
-
-.header__logo-text--small {
-    font-size: 16px;
-    display: block;
-    margin-top: -5px;
-}
-
-.header__nav {
-    flex: 2;
-}
-
-.header__contact {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 20px;
-}
-
-
-
-.header__phone:hover {
-    color: #c9a55c;
-} */ 
 
 /* Navigation component */
 .nav {
@@ -156,12 +129,15 @@
 
 .nav__item {
     position: relative;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 15.03px;
 }
 
 .nav__link {
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: 1px;
     transition: color 0.3s ease;
@@ -172,7 +148,14 @@
 }
 
 
-  
+.group_divs{
+    flex: 0 0 60%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
   .hamburger span {
     width: 25px;
     height: 3px;
@@ -328,7 +311,11 @@
     .header__nav, 
     .header__contact,
     .header__divider {
+        flex: 0;
         display: none;
+    }
+    .group_divs {
+        flex: 0 !important;
     }
     
     .header {
@@ -506,6 +493,8 @@
 }
 
 
+/*  footer start here acccordilgy  */
+
 
 .footer{
     background: url("../images/foot-bg.svg") center;
@@ -556,6 +545,10 @@
     align-items: center;
     text-align: center;
     margin: 10px 20px;
+}
+.contact-item p , .copyright p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
 
 /* New icon wrapper for the outer circle effect */
