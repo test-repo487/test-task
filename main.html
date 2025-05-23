@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jomolhari&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="hero__overlay"></div>
+        <header class="header">
+            <div class="header__logo">
+                <!-- <h2 class="header__logo-text">VICTOR T. SAMUEL <span class="header__logo-text--small">PLLC</span></h2> -->
+                <img src="./images/header-logo.png" />
+               
+            </div>
+            
+            <div class="group_divs">
+            <div class="header__divider"></div>
+            <nav class="header__nav">
+                <ul class="nav">
+                    <li class="nav__item"><a href="#" class="nav__link">HOME</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">ABOUT US</a></li>
+                    <li class="nav__item"><a href="#service" class="nav__link">SERVICES</a></li>
+                    <li class="nav__item"><a href="#insights" class="nav__link">INSIGHTS</a></li>
+                    <li class="nav__item"><a href="#attorneys" class="nav__link">ATTORNEYS</a></li>
+                </ul>
+            </nav>
+        </div>
+            <div class="header__divider"></div>
+            <div class="header__contact">
+                <div class="header-phone-contact">
+                    <img src="./icons/phone.svg" alt="Phone Icon" class="header__phone-icon">
+                    <a href="tel:+12345678901" class="header__phone">+1 234 567 8901</a>
+                </div>
+                <a href="#" class="header__button button--primary">Get in Touch</a>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </button>
+
+        </header>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu">
+            <div class="mobile-menu__content">
+                <div class="mobile-menu__header">
+                    <div class="mobile-menu__logo">
+                        <img src="./images/header-logo.png" />
+                    </div>
+                    <button class="mobile-menu__close" aria-label="Close menu">
+                        <span class="mobile-menu__close-line"></span>
+                        <span class="mobile-menu__close-line"></span>
+                    </button>
+                </div>
+                <nav class="mobile-menu__nav">
+                    <ul class="mobile-menu__list">
+                        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">HOME</a></li>
+                        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">ABOUT US</a></li>
+                        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">SERVICES</a></li>
+                        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">INSIGHTS</a></li>
+                        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">ATTORNEYS</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu__contact">
+                    <a href="tel:+12345678901" class="mobile-menu__phone">+1 234 567 8901</a>
+                    <a href="#" class="button button--primary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__content">
+            <h2 class="hero__title">Sophisticated Legal Counsel<br /> For Today's Capital Markets</h2>
+            <p class="hero__subtitle">Expert legal guidance tailored for dynamic capital markets. Trusted by issuers,
+                investors, and financial institutions worldwide.</p>
+            <div class="hero__cta">
+                <a href="#" class="button button--secondary">Request a Consultation</a>
+                <a href="#" class="button button--outline">Explore Our Practice Areas</a>
+            </div>
+        </div>
+    </div>
+
+    <!--  about the teams section html -->
+
+    <section class="team" id="about">
+        <div class="team__container">
+            <div class="team__content">
+                <span class="team__label">ABOUT THE FIRM</span>
+                <h2 class="team__title">Our Mission</h2>
+                <div class="team__quote">
+                    <span class="team__quote-mark team__quote-mark--open">&ldquo;</span>
+                    <p class="team__quote-text">
+                        Delivering strategic, high-touch legal counsel for today's fast-moving capital markets.
+                    </p>
+                    <span class="team__quote-mark team__quote-mark--close">&rdquo;</span>
+                </div>
+                <p class="team__description">
+                    I use my strategic and legal expertise to help innovators and communities build just, impactful
+                    systems that empower people and create enduring value.
+                </p>
+            </div>
+            <div class="team__image-container">
+                <img src="./images/about-firm.svg" alt="Legal professional in suit" class="team__image">
+            </div>
+        </div>
+    </section>
+    <!-- firm teams section ended now  -->
+
+    <section class="services" id="service">
+        <div class="services__container">
+            <div class="services__header">
+                <span class="services__label">SERVICES</span>
+                <div class="service_wrapper">
+                    <h1 class="services__title">Our Practice Areas</h1>
+                    <p class="services__description">
+                        One of the primary benefits of hiring a law firm is the expertise and experience that they bring
+                        to the table.
+                    </p>
+                </div>
+            </div>
+
+            <div class="services__grid">
+                <!-- Card 1 -->
+                <div class="services-card">
+                    <div class="services-card__icon services-card__icon--advisory">
+                        <img src="./icons/chess-rook-piece.svg" alt="chess-rook-piece" />
+                    </div>
+                    <h2 class="services-card__title">Advisory & Strategic Counsel</h2>
+                    <div class="services-card__link">
+                        <a href="#">
+                            CONSULT SCHEDULING
+                        </a>
+                        <img src="./icons/Arrow 7.svg" alt="Arrow"  class="black_arrow"/>
+                        <img src="./icons/hover-arrow.svg" alt="Arrow"  class="white_arrow"/>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="services-card">
+                    <div class="services-card__icon services-card__icon--regulatory">
+                        <img src="./icons/buildings.svg" alt="buildings" />
+                    </div>
+                    <h2 class="services-card__title">Regulatory Compliance</h2>
+                    <div class="services-card__link">
+                        <a href="#">
+                            CONSULT SCHEDULING
+                        </a>
+                        <img src="./icons/Arrow 7.svg" alt="Arrow"  class="black_arrow"/>
+                        <img src="./icons/hover-arrow.svg" alt="Arrow"  class="white_arrow"/>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="services-card services-card--highlighted">
+                    <div class="services-card__icon services-card__icon--banking">
+                        <img src="./icons/bank.svg" alt="bank" />
+                    </div>
+                    <h2 class="services-card__title">Banking & Capital Markets</h2>
+                    <div class="services-card__link">
+                        <a href="#">
+                            CONSULT SCHEDULING
+                        </a>
+                        <img src="./icons/Arrow 7.svg" alt="Arrow"  class="black_arrow"/>
+                        <img src="./icons/hover-arrow.svg" alt="Arrow"  class="white_arrow"/>
+                    </div>
+
+                </div>
+
+                <!-- Card 4 -->
+                <div class="services-card">
+                    <div class="services-card__icon services-card__icon--capital">
+                        <img src="./icons/ship.svg" alt="ship" />
+                    </div>
+                    <h2 class="services-card__title">Capital Raising | Private Placements | M&A</h2>
+                    <div class="services-card__link">
+                        <a href="#">
+                            CONSULT SCHEDULING
+                        </a>
+                        <img src="./icons/Arrow 7.svg" alt="Arrow"  class="black_arrow"/>
+                        <img src="./icons/hover-arrow.svg" alt="Arrow"  class="white_arrow"/>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="services-card">
+                    <div class="services-card__icon services-card__icon--securities">
+                        <img src="./icons/shield-check.svg" alt="shield-check" />
+                    </div>
+                    <h2 class="services-card__title">Securities Law & Corporate Governance</h2>
+                    <div class="services-card__link">
+                        <a href="#">
+                            CONSULT SCHEDULING
+                        </a>
+                        <img src="./icons/Arrow 7.svg" alt="Arrow"  class="black_arrow"/>
+                        <img src="./icons/hover-arrow.svg" alt="Arrow"  class="white_arrow"/>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="services-card">
+                    <div class="services-card__icon services-card__icon--legal">
+                        <img src="./icons/scale-balanced.svg" alt="scale-balanced" />
+                    </div>
+                    <h2 class="services-card__title">Legal & operational strategy</h2>
+                    <div class="services-card__link">
+                        <a href="#">
+                            CONSULT SCHEDULING
+                        </a>
+                        <img src="./icons/Arrow 7.svg" alt="Arrow"  class="black_arrow"/>
+                        <img src="./icons/hover-arrow.svg" alt="Arrow"  class="white_arrow"/>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- for team group photo section to show here  -->
+    <div class="team-group-photo">
+        <img src="./images/group-team.svg" alt="Team Group Photo" class="team-group__image">
+    </div>
+
+    <!-- blogs section start here html -->
+
+    <div class="blogs-container" id="insights">
+        <div class="header-section">
+            <div class="header-content">
+                <div class="blog-label">BLOGS</div>
+                <h1 class="team__title">Insights & Legal Briefings</h1>
+                <p class="subtitle">We provide comprehensive legal solutions, including contract drafting and
+                    negotiation, mergers and acquisitions.</p>
+            </div>
+            <div class="header-actions">
+                <a href="#" class="view-all">VIEW ALL</a>
+                <img src="./icons/Arrow 7.svg" alt="Arrow" />
+            </div>
+        </div>
+
+        <div class="articles-container">
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="./images/blog-detail1.jpeg" alt="Corporate professionals shaking hands">
+                </div>
+                <div class="article-categories">
+                    <span class="category">Corporate</span>
+                    <span class="separator">•</span>
+                    <span class="category">Finance</span>
+                    <span class="separator">•</span>
+                    <span class="category">Tax</span>
+                </div>
+                <h2 class="article-title">Inaccurate credit reporting alone does not confer</h2>
+                <a href="./blogs.html" class="learn-more">LEARN MORE <img src="./icons/Arrow 7.svg" class="arrow"></img></a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="./images/blog-detail2.jpeg" alt="Legal professionals signing documents">
+                </div>
+                <div class="article-categories">
+                    <span class="category">Intellectual Property</span>
+                    <span class="separator">•</span>
+                    <span class="category">Litigation</span>
+                </div>
+                <h2 class="article-title">Litigation issues arising from transaction</h2>
+                <a href="#" class="learn-more">LEARN MORE <img src="./icons/Arrow 7.svg" class="arrow"></img></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- blogs section start here css -->
+
+    <!--  Teams member section see here  -->
+
+    <section class="team" id="attorneys">
+        <div class="team-member__container">
+            <div class="team__header">
+
+                <span class="team__label">OUR TEAM</span>
+                <div class="team__header-container">
+                    <h2 class="team__title">Meet the Experts Behind the Success of VTS PLLC</h2>
+                    <div class="team__divider">
+                        <span class="team__divider-line team__divider-line--dark"></span>
+                        <span class="team__divider-line team__divider-line--light"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="team__flex">
+                <!-- Team Member 1 -->
+                <div class="team-member">
+                    <div class="team-member__image-container">
+                        <img src="./images/team-img-1.svg" alt="Team member" class="team-member__image">
+                        <div class="team-member__overlay">
+                            <div class="team-member__info">
+                                <div>
+                                    <h3 class="team-member__name">Victor T.Samuel</h3>
+                                    <p class="team-member__position">Founder, Vicotor T.Samuel, PLLC</p>
+                                </div>
+
+                                <div class="team-member__arrow">
+                                    <a href="./Team.html">
+                                        <img src="./icons/team-hover.svg" alt="Arrow" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-member">
+                    <div class="team-member__image-container">
+                        <img src="./images/team-img-2.svg" alt="Team member" class="team-member__image">
+                        <div class="team-member__overlay">
+                            <div class="team-member__info">
+                                <h3 class="team-member__name">Sandra Clarke</h3>
+                                <p class="team-member__position">Paralegal</p>
+                                <div class="team-member__arrow">
+                                    <a href="./TeamMember1.html">
+                                    <img src="./icons/team-hover.svg" alt="Arrow" />
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- contact form html start here  -->
+
+    <div class="contact">
+        <div class="contact__container">
+            <div class="contact__left">
+                <p class="contact__subtitle">Let's Get In Touch</p>
+                <h1 class="contact__title">Leave an email & we will respond</h1>
+                <p class="contact__text">To schedule an appointment with one of our skilled Lawyers, please fill out the
+                    form below or contact our office directly.</p>
+                <p class="contact__text">Our friendly staff will promptly assist you in arranging a consultation at a
+                    time that works best for you.</p>
+            </div>
+            <div class="contact__right">
+                <form class="contact__form">
+                    <div class="contact__form-row">
+                        <div class="contact__form-group">
+                            <input type="text" class="contact__input" placeholder="First Name">
+                        </div>
+                        <div class="contact__form-group">
+                            <input type="text" class="contact__input" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="contact__form-row">
+                        <div class="contact__form-group">
+                            <input type="tel" class="contact__input" placeholder="Phone Number">
+                        </div>
+                        <div class="contact__form-group">
+                            <input type="email" class="contact__input" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="contact__form-group">
+                        <div class="contact__select-wrapper">
+                            <select class="contact__select">
+                                <option value="" disabled selected>Choose a service</option>
+                                <option value="service1">Service 1</option>
+                                <option value="service2">Service 2</option>
+                                <option value="service3">Service 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="contact__form-group">
+                        <div class="contact__select-wrapper">
+                            <select class="contact__select">
+                                <option value="" disabled selected>Choose specialist</option>
+                                <option value="specialist1">Specialist 1</option>
+                                <option value="specialist2">Specialist 2</option>
+                                <option value="specialist3">Specialist 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="contact__form-group">
+                        <div class="contact__select-wrapper">
+                            <select class="contact__select">
+                                <option value="" disabled selected>Choose district</option>
+                                <option value="district1">District 1</option>
+                                <option value="district2">District 2</option>
+                                <option value="district3">District 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="contact__form-group">
+                        <button type="submit" class="contact__button">Submit Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  for footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <h2>VICTOR T.SAMUEL</h2>
+                <p>PLLC</p>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="icon-wrapper">
+                        <div class="icon-container phone">
+                            <img src="./images/phone.svg" />
+                        </div>
+                    </div>
+                    <p>(91) 234-567-7979</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon-wrapper">
+                        <div class="icon-container">
+                            <img src="./icons/location-dot.svg" />
+                        </div>
+                    </div>
+                    <p>28 Alleghany Ave, 1304, Towson,<br>Maryland 21204, US</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon-wrapper">
+                        <div class="icon-container">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                    <p>vtspllc123@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>© VTS PLLC. All Rights Reserved. <a href="#">Licensing</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
